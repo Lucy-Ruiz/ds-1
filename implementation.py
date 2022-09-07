@@ -10,8 +10,8 @@ pi_day()
 def fruits_veggies():
     fruits_and_veggies = {'guava', 'pitaya', 'lime', 'kiwi', 'grapes'}
     fruits_and_veggies_2 = {'pineapple', 'pomegranate', 'sweet potato', 'artichoke'}
-    all_fruits_and_veggies = fruits_and_veggies.union(fruits_and_veggies_2)
-    for items in all_fruits_and_veggies:
+    fruits_and_veggies.update(fruits_and_veggies_2)
+    for items in fruits_and_veggies:
         print(items)
 
 fruits_veggies()
